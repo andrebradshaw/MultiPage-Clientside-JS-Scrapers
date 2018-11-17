@@ -1,3 +1,7 @@
+/*/ watch the live build: 
+https://youtu.be/4MVhm6vlRpQ
+/*/
+
 function checker(elm, type) {
   if (elm != undefined) {
     if (type == 'href') {
