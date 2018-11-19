@@ -23,7 +23,7 @@ function descLoopPages(totalNum, n){
 	setTimeout(()=>{
 		var pwnd = window.open(baseUrl+'&p='+(n+1));
 		setTimeout(()=>{
-			var userList = document.getElementsByClassName('user-list-info');
+			var userList = pwnd.document.getElementsByClassName('user-list-info');
 			getUserList(userList);
 		},3300);
 		setTimeout(()=>{
@@ -36,7 +36,7 @@ function ascLoopPages(totalNum, n){0
 	setTimeout(()=>{
 		var pwnd = window.open(baseUrl.replace(/=desc/, '=asc')+'&p='+(n+1));
 		setTimeout(()=>{
-			var userList = document.getElementsByClassName('user-list-info');
+			var userList = pwnd.document.getElementsByClassName('user-list-info');
 			getUserList(userList);
 		},3300);
 		setTimeout(()=>{
